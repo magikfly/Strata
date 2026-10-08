@@ -2,7 +2,7 @@ name: Build and publish Strata for Blackwell
 
 on:
   schedule:
-    - cron: "30 6 * * *" # Check upstream once a day (UTC)
+    - cron: "0 0 * * *" # Build ahead of Unraid Watchtower's 04:00 Europe/Amsterdam poll
   workflow_dispatch:
     inputs:
       tag:
